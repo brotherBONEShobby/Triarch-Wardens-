@@ -18,6 +18,16 @@
         "type": "catalogue"
       }
     ],
+    "entryLinks": [
+      {
+        "name": "Chapter Master Cornelius Vandar",
+        "id": "bcf6-8763-7a92-6704",
+        "hidden": false,
+        "import": true,
+        "targetId": "7b37-f60d-a4ba-2bf3",
+        "type": "selectionEntry"
+      }
+    ],
     "sharedProfiles": [
       {
         "name": "Chapter Master Cornelius Vandar",
