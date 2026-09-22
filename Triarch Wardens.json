@@ -52,208 +52,196 @@
         "id": "7b37-f60d-a4ba-2bf3",
         "hidden": false,
         "import": false,
-        "type": "unit",
-        "categoryLinks": [{"name": "Character", "id": "141d-b6c9-f2f1-a613", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}],
-        "infoLinks": [{"name": "Chapter Master Cornelius Vandar", "id": "0cee-f3f9-f7d7-2ce5", "hidden": false, "targetId": "1188-03c0-45f7-5138", "type": "profile"}],
-        "selectionEntries": [
+        "type": "model",
+        "associations": [
           {
-            "name": "Chapter Master Cornelius Vandar",
-            "id": "f8af-ddcc-bea2-9b7c",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "associations": [
+            "name": "Leading",
+            "id": "f593-7af3-4113-7838",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Led by",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
               {
-                "name": "Leading",
-                "id": "f593-7af3-4113-7838",
-                "action": "group",
-                "childId": "unit",
-                "childName": "unit",
-                "includeChildSelections": true,
-                "label": "Led by",
-                "max": 1,
-                "min": 0,
-                "scope": "force",
-                "conditionGroups": [
+                "type": "or",
+                "conditions": [
                   {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "childId": "129d-2da5-66f3-f4ec",
-                        "childName": "Aggressor Squad",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "self",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      },
-                      {
-                        "childId": "3bc7-8328-a080-3958",
-                        "childName": "Eradicator Squad with Heavy Bolters",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "self",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      },
-                      {
-                        "childId": "c570-c6ba-c9dc-5a44",
-                        "childName": "Eradicator Squad",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "self",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      },
-                      {
-                        "childId": "7324-e591-939b-b675",
-                        "childName": "Heavy Intercessor Squad",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "self",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      },
-                      {
-                        "childId": "7044-bf1-f949-c32d",
-                        "childName": "Bladeguard Veteran Squad",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "self",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      },
-                      {
-                        "childId": "4808-a80b-309a-7933",
-                        "childName": "Terminator Squad",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "self",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      },
-                      {
-                        "childId": "ae9a-10e3-8091-20",
-                        "childName": "Terminator Assault Squad",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "self",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
+                    "childId": "129d-2da5-66f3-f4ec",
+                    "childName": "Aggressor Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "3bc7-8328-a080-3958",
+                    "childName": "Eradicator Squad with Heavy Bolters",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c570-c6ba-c9dc-5a44",
+                    "childName": "Eradicator Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7324-e591-939b-b675",
+                    "childName": "Heavy Intercessor Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7044-bf1-f949-c32d",
+                    "childName": "Bladeguard Veteran Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "4808-a80b-309a-7933",
+                    "childName": "Terminator Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "ae9a-10e3-8091-20",
+                    "childName": "Terminator Assault Squad",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
                   }
                 ]
               }
-            ],
-            "categoryLinks": [
-              {"name": "Character", "id": "cfcf-4638-9a95-d84c", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
-              {"name": "Epic Hero", "id": "4449-e8f1-d17b-c925", "hidden": false, "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
-              {"name": "Infantry", "id": "b83b-8aec-456a-0156", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
-              {"name": "Captain", "id": "537d-1304-ee79-919e", "hidden": false, "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
-              {"name": "Grenades", "id": "2fe1-45b9-9080-6f9f", "hidden": false, "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
-              {"name": "Imperium", "id": "14de-ccbf-f190-22d9", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
-              {"name": "Faction: Adeptus Astartes", "id": "fac6-1061-b892-e6b4", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
-              {"name": "Gravis", "id": "17c8-d7eb-2b87-b900", "hidden": false, "primary": false, "targetId": "81f0-f40e-c36c-5a30"},
-              {"name": "Leader", "id": "75a2-52f5-645f-52a7", "hidden": false, "primary": false, "targetId": "1556-9b56-fba6-4370"}
-            ],
-            "constraints": [
-              {"id": "5c8d-41f4-5367-2489-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "5c8d-41f4-5367-2489-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
-              {"id": "868f-8be7-96af-39a7", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}
-            ],
-            "costs": [
-              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 135},
-              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
-              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
-              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
-              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
-              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
-              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
-              {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
-              {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
-              {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
-            ],
-            "infoLinks": [{"name": "Leader", "id": "8573-bf39-0164-df8e", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"}],
-            "profiles": [
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {"name": "Character", "id": "141d-b6c9-f2f1-a613", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Epic Hero", "id": "c7a9-f4d4-7372-88c0", "hidden": false, "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Infantry", "id": "07cd-5815-6cf3-af80", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Captain", "id": "9240-70f0-9e8a-ef86", "hidden": false, "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
+          {"name": "Grenades", "id": "af9f-9d02-d74a-5d03", "hidden": false, "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
+          {"name": "Imperium", "id": "67bb-0dcb-d102-b090", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
+          {"name": "Faction: Adeptus Astartes", "id": "18db-3f0b-6bce-e30a", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
+          {"name": "Gravis", "id": "9e82-8388-462e-b37b", "hidden": false, "primary": false, "targetId": "81f0-f40e-c36c-5a30"},
+          {"name": "Leader", "id": "007e-94e8-9edd-67d7", "hidden": false, "primary": false, "targetId": "1556-9b56-fba6-4370"}
+        ],
+        "constraints": [{"id": "cb60-2493-2755-5b2e", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 135},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+          {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Chapter Master Cornelius Vandar", "id": "0cee-f3f9-f7d7-2ce5", "hidden": false, "targetId": "1188-03c0-45f7-5138", "type": "profile"},
+          {"name": "Leader", "id": "8573-bf39-0164-df8e", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Cunning Strategist",
+            "id": "a5de-ab9b-9ec4-6fb3",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
               {
-                "name": "Master-Crafted Thunder Hammer",
-                "id": "5dba-6102-e2f0-b440",
-                "hidden": false,
-                "typeId": "8a40-4aaa-c780-9046",
-                "typeName": "Melee Weapons",
-                "characteristics": [
-                  {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
-                  {"name": "A", "$text": "6", "typeId": "2337-daa1-6682-b110"},
-                  {"name": "WS", "$text": "2+", "typeId": "95d1-95f-45b4-11d6"},
-                  {"name": "S", "$text": "10", "typeId": "ab33-d393-96ce-ccba"},
-                  {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
-                  {"name": "D", "$text": "3", "typeId": "3254-9fe6-d824-513e"},
-                  {"name": "Keywords", "$text": "Devastating Wounds", "typeId": "893f-9000-ccf7-648e"}
-                ]
-              },
+                "name": "Description",
+                "$text": "After both players have deployed their armies, before the first turn begins, you can redeploy up to two ADEPTUS ASTARTES units from your army. When doing so, you can place those units into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Master Cornelius Vandar",
+            "id": "2e43-1e57-7c43-7fb9",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
               {
-                "name": "Master-Crafted Relic Shield",
-                "id": "7fdb-eea2-7f61-6acb",
-                "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
-                  {
-                    "name": "Description",
-                    "$text": "This model bears the Master Crafted Relic Shield. Its enhanced protection is represented in its Save and Invulnerable Save characteristics.",
-                    "typeId": "9b8f-694b-e5e-b573"
-                  }
-                ]
-              },
+                "name": "Description",
+                "$text": "This model can be attached to the following units: \n\n\nAggressor Squad\nEradicator Squad \nEradicator Squad with Heavy Bolters \nHeavy Intercessor Squad \nBladeguard Veteran Squad\nTerminator Squad\nTerminator Assault Squad",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Master-Crafted Relic Shield",
+            "id": "7fdb-eea2-7f61-6acb",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
               {
-                "name": "Cunning Strategist",
-                "id": "a5de-ab9b-9ec4-6fb3",
-                "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
-                  {
-                    "name": "Description",
-                    "$text": "After both players have deployed their armies, before the first turn begins, you can redeploy up to two ADEPTUS ASTARTES units from your army. When doing so, you can place those units into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
-                    "typeId": "9b8f-694b-e5e-b573"
-                  }
-                ]
-              },
+                "name": "Description",
+                "$text": "This model bears the Master Crafted Relic Shield. Its enhanced protection is represented in its Save and Invulnerable Save characteristics.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Master-Crafted Thunder Hammer",
+            "id": "5dba-6102-e2f0-b440",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "6", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "2+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "10", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "3", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "Devastating Wounds", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          },
+          {
+            "name": "The Line Bends, Never Breaks",
+            "id": "785e-40a8-d0a1-22f2",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
               {
-                "name": "Chapter Master Cornelius Vandar",
-                "id": "2e43-1e57-7c43-7fb9",
-                "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
-                  {
-                    "name": "Description",
-                    "$text": "This model can be attached to the following units: \n\n\nAggressor Squad\nEradicator Squad \nEradicator Squad with Heavy Bolters \nHeavy Intercessor Squad \nBladeguard Veteran Squad\nTerminator Squad\nTerminator Assault Squad",
-                    "typeId": "9b8f-694b-e5e-b573"
-                  }
-                ]
-              },
-              {
-                "name": "The Line Bends, Never Breaks",
-                "id": "785e-40a8-d0a1-22f2",
-                "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
-                  {
-                    "name": "Description",
-                    "$text": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
-                    "typeId": "9b8f-694b-e5e-b573"
-                  }
-                ]
+                "name": "Description",
+                "$text": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
+                "typeId": "9b8f-694b-e5e-b573"
               }
             ]
           }
